@@ -71,27 +71,27 @@ def main():
     savings = SavingsAccount("Raghav", 10000)
     current = CurrentAccount("Aman", 5000)
 
-    print("=== Account Details ===")
+    print("Account Details")
     display_account(savings)
     display_account(current)
 
-    print("\n=== Encapsulation ===")
+    print("\n Encapsulation")
     print("Savings balance:", savings.balance)
 
-    print("\n=== Deposit and Withdrawal ===")
+    print("\nDeposit and Withdrawal")
     savings.deposit(2000)
     savings.withdraw(1500)
     print("Updated balance:", savings.balance)
 
-    print("\n=== Polymorphism ===")
+    print("\nPolymorphism")
     for account in [savings, current]:
         print(f"{account.account_holder}: {account.account_type()}")
 
-    print("\n=== Operator Overloading ===")
+    print("\nOperator Overloading ")
     total_balance = savings + current
     print(f"Combined balance: ₹{total_balance:.2f}")
 
-    print("\n=== Magic Method: __str__ ===")
+    print("\n Magic Method: __str__ ")
     print(savings)
 
 
