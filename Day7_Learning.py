@@ -90,7 +90,6 @@ print("3D array shape:", random_array.shape)
 
 
 #RANDOM NUMBER GENERATION
-print("\n=== 8. RANDOM NUMBERS ===")
 
 random_numbers = np.random.rand(5)
 print("Random numbers:", random_numbers)
